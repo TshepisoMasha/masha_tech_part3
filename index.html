@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Masha Tech in Ebony Park, Midrand. We support young people with computer access, digital skills, tutoring and mentorship.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Masha Tech">
+    <meta property="og:title" content="Masha Tech | Digital Skills and Youth Support in Ebony Park">
+    <meta property="og:description" content="Discover Masha Tech in Ebony Park, Midrand. We support young people with computer access, digital skills, tutoring and mentorship.">
+    <meta name="theme-color" content="#3A5F3A">
+    <title>Masha Tech | Digital Skills and Youth Support in Ebony Park</title>
+    <style>
+        :root {
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+        }
+        /* HEADER */
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+        }
+        header img{
+            height: 70px;
+            width: auto;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: var(--green);
+        }
+        /* MAIN */
+        main{
+            padding: 60px 8%;
+            text-align: center;
+        }
+        main h1 {
+            font-size: 2.8rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        main h4 {
+            font-size: 1.3rem;
+            color: var(--green);
+            margin-bottom: 30px;
+        }
+        blockquote{
+            background: whitesmoke;
+            border-left: 6px solid var(--green);
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            font-style: italic;
+            font-size: 1.1rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        blockquote span{
+            display:block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: var(--dark-green);
+        }
+        .btn{
+            display: inline-block;
+            background: var(--green);
+            color: whitesmoke;
+            padding: 14px 30px ;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background: var(--dark-green);
+        }
+        /*FOOTER*/
+        footer{
+            background: var(--dark-green);
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    
+        /* Shared Part 3 additions: responsive media and accessible image lightbox. */
+        img[data-lightbox] { cursor: zoom-in; }
+        iframe.map-frame { width: 100%; min-height: 300px; border: 0; border-radius: 8px; }
+        .lightbox { display: none; position: fixed; inset: 0; z-index: 9999; padding: 4vh 4vw; background: rgba(0,0,0,.88); align-items: center; justify-content: center; }
+        .lightbox.is-open { display: flex; }
+        .lightbox img { max-width: 92vw; max-height: 88vh; object-fit: contain; cursor: zoom-out; }
+        .lightbox button { position: absolute; top: 18px; right: 24px; border: 0; background: transparent; color: white; font-size: 2rem; cursor: pointer; }
+        .customer-form { max-width: 760px; margin: 35px auto; padding: 28px; background: whitesmoke; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.08); text-align: left; }
+        .customer-form label { display: block; margin: 12px 0 6px; font-weight: 600; color: var(--dark-green); }
+        .customer-form input, .customer-form select, .customer-form textarea { width: 100%; padding: 12px; border: 1px solid #bbb; border-radius: 7px; font: inherit; }
+        .customer-form button { margin-top: 16px; }
+        @media (max-width: 700px) { header { flex-wrap: wrap; gap: 12px; } nav ul { flex-wrap: wrap; gap: 12px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <img data-lightbox src="_images/LOGO_.jpg" width="600" height="500"  alt=" Masha Tech Logo">
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+    
+                <li><a href="about.html">About</a></li>
+                    
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+                
+                <li><a href="enquires.html">Enquires</a></li>
+                    
+                <li><a href="services.html">Services</a></li>
+                    
+                
+
+
+
+            </ul>
+            
+
+           
+
+
+        </nav>
+
+
+
+
+    </header>
+
+    <main>
+        <h1>Welcome to Masha Tech</h1><!--used the highest font show the name of the arganisation-->
+        <h4>Holding hands to a brighter future</h4>
+        <blockquote>"Young people must take it upon themselves to ensure that they receive the highest 
+            education possible so that they can represent us well in the future as future leaders" 
+            <span>~Nelson Mandela</span><!--used a feature that allows for quotes to be written i itelics-->
+
+        </blockquote>
+        <p>We provide digital skills and mentorship to empower the next generation of leaders.
+        </p>
+        <a
+            href="services.html" class="btn">View Our Services</a>
+        
+
+        
+    </main>
+
+    <footer><!-- the footer is the lowest point on the page and it has this text throughout the pages-->
+        <P> 2025 Mahsa Tech | Ebony Park, Midrand , South Africa | info@mashatech.co.za</P>
+
+
+
+    </footer>    
+    
+
+    <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Expanded image">
+        <button type="button" id="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-image" src="" alt="">
+    </div>
+    <script src="js_assets/site.js" defer></script>
+</body>
+</html>

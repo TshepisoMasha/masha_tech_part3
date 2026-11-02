@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--PLEASE NOT THAT THE COMMENTS THAT ARE MADE IN THE ABOUT FILE ARE APPLICABLE TO OTHER FILES
+    HOWEVER ADDITIONAL COMMENTS WILL BE MADE ON THE CHANGES ACCORDING TO EACH FILE-->
+
+
+    <!--This is the brain  of the website. the stuff here doesnt show on the page,
+     but tells the browser how to work-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Masha Tech, a youth-focused non-profit in Ebony Park, Midrand, helping young people build digital skills and access education.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Masha Tech">
+    <meta property="og:title" content="About Masha Tech | Our Mission and Community Values">
+    <meta property="og:description" content="Learn about Masha Tech, a youth-focused non-profit in Ebony Park, Midrand, helping young people build digital skills and access education.">
+    <meta name="theme-color" content="#3A5F3A">
+    <title>About Masha Tech | Our Mission and Community Values</title><!--This will be the text that shows on the browser 
+    tab at the top. also used by google-->
+
+
+    <!--This is the CSS controls how the website looks like. This falls onto part1 and 2-->
+     <style>
+        :root { /* :roots means global settings, meaning these are variables that will be used 
+            through out the website to maintain a uniform setting*/
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+            /*i have created variables of colour green in different shades*/
+
+
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+            line-height: 1.7;
+        }
+        /* HEADER: this styles the top bar that appears on every page, being the navigator bar*/
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: static;
+            top: 0;
+        }
+
+
+        /* this part will only target the image inside the header(the top part) in our case
+        its the logo */
+        header img{
+            height: 70px;
+            width: auto;
+
+             
+        }/* this part targets and styles the menu list*/
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {/*this part styles all the links that appear on the menu*/
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+        nav a:hover {/* when you hover your mouse on the link a colour will appear*/
+            color: var(--green);
+        }
+        /* ABOUT SECTION*/
+        .about{
+            padding: 60px 8%;
+        }/*how the about text will look like in terms of font size, colour, how it will be positioned
+        and where it will be positioned*/
+        .about h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .about p.intro{
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            color: #555;
+            text-align: center;
+        }
+        .about-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .card{
+            background: whitesmoke;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--green);  
+        }
+        .card h3{
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        /* VALUES*/
+        .values{
+            background: whitesmoke;
+            padding: 40px ;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .values h2 {
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .value-grid{ 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .value-item {
+            padding: 20px;
+        }
+        .value-item .icon { 
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        /* QUOTE */
+        blockquote{
+            background: var(--green);
+            color: whitesmoke;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 40px 0;
+        }
+        blockquote span { 
+            display:block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        footer{
+           background: var(--dark-green);
+           color: whitesmoke;
+           text-align: center;
+           padding: 20px;
+           margin-top: 50px;
+
+        }
+    
+    
+        /* Shared Part 3 additions: responsive media and accessible image lightbox. */
+        img[data-lightbox] { cursor: zoom-in; }
+        iframe.map-frame { width: 100%; min-height: 300px; border: 0; border-radius: 8px; }
+        .lightbox { display: none; position: fixed; inset: 0; z-index: 9999; padding: 4vh 4vw; background: rgba(0,0,0,.88); align-items: center; justify-content: center; }
+        .lightbox.is-open { display: flex; }
+        .lightbox img { max-width: 92vw; max-height: 88vh; object-fit: contain; cursor: zoom-out; }
+        .lightbox button { position: absolute; top: 18px; right: 24px; border: 0; background: transparent; color: white; font-size: 2rem; cursor: pointer; }
+        .customer-form { max-width: 760px; margin: 35px auto; padding: 28px; background: whitesmoke; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.08); text-align: left; }
+        .customer-form label { display: block; margin: 12px 0 6px; font-weight: 600; color: var(--dark-green); }
+        .customer-form input, .customer-form select, .customer-form textarea { width: 100%; padding: 12px; border: 1px solid #bbb; border-radius: 7px; font: inherit; }
+        .customer-form button { margin-top: 16px; }
+        @media (max-width: 700px) { header { flex-wrap: wrap; gap: 12px; } nav ul { flex-wrap: wrap; gap: 12px; } }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <img data-lightbox src="_images/LOGO_.jpg" width="400" height="300"  alt=" Masha Tech Logo">
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+    
+                <li><a href="about.html">About</a></li>
+                    
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+                
+                <li><a href="enquires.html">Enquires</a></li>
+                    
+                <li><a href="services.html">Services</a></li>
+                    
+                
+
+
+
+            </ul>
+            
+
+           
+
+
+        </nav>
+
+
+
+
+    </header><!--The header is where all the text will be written, it will appear and occupy
+    the middle of the page-->
+    <section class="about">
+        <h1>About Masha Tech</h1><!--using h1, which is the highest font-->
+        <p class="intro">Holding hands to a brighter future</p>
+        <div class="about-grid">
+            <div class="card">
+                <h3>Howi It All Started</h3>
+                <p>Masha Tech is a small non-profit organisation based in Ebony Park, Midrand. It was stared because many
+            young people in the area finish school without optaining the skills of using a computer,
+            sending emails or even applying for universities or jobs. <!--"p" represents paragraph in Html-->
+            
+            <br><br> young group of volunteers, <!--using "br" to break and separate the paragraph so that it doent
+            appear as a long line of writing-->
+            including students and those who are done with school, decided to help by teaching these 
+            skills for free. We also help learners with homework, assigments and exam preparations.
+        </p>
+            </div>
+            <div class="card">
+                <h3>Who Started It</h3>
+                <p>Masha Tech was founded by a group of passionate young leaders from Ebony Park,who believe
+                    that eduucation is the key to braeking the cycle of poverty
+                    <br><br>
+                    Our team is made up of tutors, mentors and volunteers who give their time to help learners with homework,
+                    assignments, exam preparations and digital literacy. We are "by the youth, for the youth."
+                </p>
+            </div> 
+            <div class="card">
+                <h3>What we stand for</h3>
+                <p>We believe every young person deserves access to technology and education, no matter their background</p>
+                <br><br>Our mission is to equip youth with the right skills so they can compete and create jobs.
+            </div>
+        </div>
+        <div class="values">
+            <h2>Our Core Values</h2>
+            <div class="value-item">
+                <h4>Community First</h4>
+                <p>We surve Ebony Park and surrounding areas with love and respect</p>
+            </div>
+            <div class="value-item">
+                <h4>Education</h4>
+                <p>Learning never stops. We push for the highest standards</p>
+            </div>
+            <div class="value-item">
+                <h4>Access</h4>
+                <p>Free computer access ans skills for those who need it the most.</p>
+            </div>
+            <div class="value-item">
+                <h4>Upliftment</h4>
+                <p>Holding hands to build each other up to a brighter future</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Into detail discription of what we do</h3>
+            <ul style="margin-left: 20px;">
+                <li><strong>CV & University Application Workshorp:</strong>
+                We help Grade 12 learners apply to universities and creating professional CVs</li>
+                <li><strong>Peer-to-peer Tutoring:</strong>Older students teach young ones. This builds Leadership</li>
+                <li><strong>Weekend Coding Club</strong>Introducing basic coding and robotics to spark interest in tech careers</li>
+                <li><strong>Safe Study Space:</strong>A quiet, supervised place to study and do homework after school</li>
+            </ul>
+        </div>
+        <blockquote>"Young people must take it upon themselves to ensure that they receive the highest education possible
+            so that they can represent us well in the future as future leaders"
+            <span>~ Nelson Mandela</span>
+        </blockquote><!--i used a quote feature to make the words have an itelic look -->
+
+        
+    </section>
+
+    <main>
+        
+
+
+    </main>
+
+    <footer>
+        <!--throughout the website the footer remains the same, the writting only appears at the bottom of the page-->
+
+      <p> 2025 Masha Tech | Ebony Park, Midrand, South Africa | info@mashatech.co.za</p>
+
+    </footer>
+    
+    
+
+
+
+
+
+    <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Expanded image">
+        <button type="button" id="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-image" src="" alt="">
+    </div>
+    <script src="js_assets/site.js" defer></script>
+</body>
+</html>
